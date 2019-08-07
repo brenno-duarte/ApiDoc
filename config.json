@@ -1,0 +1,107 @@
+{
+    "appName": "Application name",
+    "version": "1.0",
+    "description": "Application Description",
+    "language": "PHP",
+    "protocol": "HTTPS",
+    "urls": {
+        "path": {
+            "namePath1": {
+                "get": {
+                    "id": 1,
+                    "pathGet": "/pathGet",
+                    "descriptionGet": "descriptionGet",
+                    "link": "http://localhost/linkGet"
+                },
+                "getId": {
+                    "id": 9,
+                    "pathGetId": "/pathGetId",
+                    "descriptionGet": "descriptionGetId",
+                    "link": "http://localhost/linkGetId"
+                },
+                "post": {
+                    "id": 2,
+                    "pathPost": "/pathPost",
+                    "descriptionPost": "descriptionPost",
+                    "link": "http://localhost/linkPost"
+                },
+                "put": {
+                    "id": 3,
+                    "pathPut": "/pathPut/{id}",
+                    "descriptionPut": "descriptionPut",
+                    "link": "http://localhost/linkPut"
+                },
+                "delete": {
+                    "id": 4,
+                    "pathDelete": "/pathDelete/{id}",
+                    "descriptionDelete": "descriptionDelete",
+                    "link": "http://localhost/linkDelete"
+                }
+            },
+            "namePath2": {
+                "get": {
+                    "id": 5,
+                    "pathGet": "/pathGet",
+                    "descriptionGet": "descriptionGet",
+                    "link": "http://localhost/linkGet"
+                },
+                "getId": {
+                    "id": 10,
+                    "pathGetId": "/pathGetId",
+                    "descriptionGet": "descriptionGetId",
+                    "link": "http://localhost/linkGetId"
+                },
+                "post": {
+                    "id": 6,
+                    "pathPost": "/pathPost",
+                    "descriptionPost": "descriptionPost",
+                    "link": "http://localhost/linkPost"
+                },
+                "put": {
+                    "id": 7,
+                    "pathPut": "/pathPut/{id}",
+                    "descriptionPut": "descriptionPut",
+                    "link": "http://localhost/linkPut"
+                },
+                "delete": {
+                    "id": 8,
+                    "pathDelete": "/pathDelete/{id}",
+                    "descriptionDelete": "descriptionDelete",
+                    "link": "http://localhost/linkDelete"
+                }
+            },
+            "namePath3": {
+                "get": {
+                    "id": 5,
+                    "pathGet": "/pathGet",
+                    "descriptionGet": "descriptionGet",
+                    "link": "http://localhost/linkGet"
+                },
+                "getId": {
+                    "id": 11,
+                    "pathGetId": "/pathGetId",
+                    "descriptionGet": "descriptionGetId",
+                    "link": "http://localhost/linkGetId"
+                },
+                "post": {
+                    "id": 6,
+                    "pathPost": "/pathPost",
+                    "descriptionPost": "descriptionPost",
+                    "link": "http://localhost/linkPost"
+                },
+                "put": {
+                    "id": 7,
+                    "pathPut": "/pathPut/{id}",
+                    "descriptionPut": "descriptionPut",
+                    "link": "http://localhost/adminPut"
+                },
+                "delete": {
+                    "id": 8,
+                    "pathDelete": "/pathDelete/{id}",
+                    "descriptionDelete": "descriptionDelete",
+                    "link": "http://localhost/linkDelete"
+                }
+            }
+        }
+    }
+}

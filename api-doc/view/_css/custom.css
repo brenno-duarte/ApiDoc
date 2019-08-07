@@ -1,0 +1,34 @@
+nav {
+    height: 45px;
+}
+
+ul li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.fontspan {
+    font-size: 15px;
+}
+
+.logo {
+    width: 10%;
+    height: 10%;
+}
+
+.hidden {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.space {
+    margin-bottom: 10px;
+}
+
+.back {
+    background-color: #E8E8E8;
+    margin-bottom: 15px;
+}
