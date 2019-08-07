@@ -1,11 +1,6 @@
 # Introduction
 
-<<<<<<< HEAD
 ![GitHub release](https://img.shields.io/github/release/brenno/1.0-beta)
-=======
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
-[![version](https://img.shields.io/badge/version-0.1-yellow.svg)](https://semver.org)
->>>>>>> e0d25e676c4eb35b200077917b1bab386302c84e
 
 ApiDoc is a template made in HTML, PHP and Jquery to assist with PHP REST API documentation.
  
@@ -39,11 +34,6 @@ The **urls** session is subdivided into:
 - **"descriptionGet/Post/Put/Delete"**: a brief description of your endpoint,
 - **"link"**: link from your endpoint. Clicking it will open in a new tab.
 
-<<<<<<< HEAD
 To add a new path, copy from "namePath" into the "config.json" file and paste it below the other paths.
 
 Done, just open the **index.php** file in any browse
-=======
-Done, just open the **index.html** file in any browse
-
->>>>>>> e0d25e676c4eb35b200077917b1bab386302c84e
