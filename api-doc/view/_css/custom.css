@@ -20,6 +20,11 @@ ul li {
     height: 10%;
 }
 
+.logo2 {
+    width: 185px;
+    height: 80px;
+}
+
 .hidden {
     display: none;
 }

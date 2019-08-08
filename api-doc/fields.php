@@ -9,13 +9,36 @@
         <div class="col col-md-6">
             <p><span class="back">Description: </span><?php echo $info->description; ?></p>
             <p><span class="back">API version: </span><?php echo $info->version; ?></p>
-            <p><a href="https://github.com/brennoDuarte/ApiDoc" target="_blank">Github</a></p>
-            <p><a href="#">About</a></p>
+            <p><a href="https://github.com/brennoDuarte/ApiDoc/releases" target="_blank">Github</a></p>
+            <p><a href="#" data-toggle="modal" data-target="#about">About</a></p>
         </div>
 
         <div class="col col-md-6">
             <p><span class="back">Language: </span><?php echo $info->language; ?></p>
             <p><span class="back">Protocol: </span><?php echo $info->protocol; ?></p>
+        </div>
+
+       <!-- Modal -->
+        <div class="modal fade" id="about" tabindex="-1" role="dialog" aria-labelledby="labelM" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="labelM">About</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Content Modal -->
+                        <img src="view/_img/apidoclogo.png" class="navbar-left pull-right text-center">
+                        <h4 class="text-center">ApiDoc 1.1.0 (RC)</h4>
+                        <a href="https://github.com/brennoDuarte/ApiDoc/blob/master/LICENSE" target="_blank">License MIT</a>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

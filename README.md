@@ -1,7 +1,5 @@
 # Introduction
 
-![GitHub release](https://img.shields.io/github/release/brenno/1.0-beta)
-
 ApiDoc is a template made in HTML, PHP and Jquery to assist with PHP REST API documentation.
  
 <img src="api-doc/view/_img/apidoc.png">
@@ -36,4 +34,4 @@ The **urls** session is subdivided into:
 
 To add a new path, copy from "namePath" into the "config.json" file and paste it below the other paths.
 
-Done, just open the **index.php** file in any browse
+Done, just open the **apidoc.php** file in any browse
