@@ -16,7 +16,7 @@
                 "getId": {
                     "id": 9,
                     "pathGetId": "/pathGetId",
-                    "descriptionGet": "descriptionGetId",
+                    "descriptionGetId": "descriptionGetId",
                     "link": "http://localhost/linkGetId"
                 },
                 "post": {
@@ -48,7 +48,7 @@
                 "getId": {
                     "id": 10,
                     "pathGetId": "/pathGetId",
-                    "descriptionGet": "descriptionGetId",
+                    "descriptionGetId": "descriptionGetId",
                     "link": "http://localhost/linkGetId"
                 },
                 "post": {
@@ -80,7 +80,7 @@
                 "getId": {
                     "id": 11,
                     "pathGetId": "/pathGetId",
-                    "descriptionGet": "descriptionGetId",
+                    "descriptionGetId": "descriptionGetId",
                     "link": "http://localhost/linkGetId"
                 },
                 "post": {
