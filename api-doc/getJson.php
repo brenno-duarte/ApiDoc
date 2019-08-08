@@ -1,8 +1,8 @@
 <?php
 
-class apidoc {
+class getJson {
     
-    public function getJson(){
+    public function getInfo(){
         $json = file_get_contents('../config.json');
         $data = json_decode($json);
 

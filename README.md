@@ -4,7 +4,7 @@
 
 ApiDoc is a template made in HTML, PHP and Jquery to assist with PHP REST API documentation.
  
-<img src="/view/_img/apidoc.png">
+<img src="api-doc/view/_img/apidoc.png">
 
 ### Installation
 

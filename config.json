@@ -1,7 +1,7 @@
 {
     "appName": "Application name",
     "version": "1.0",
-    "description": "Application Description",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
     "language": "PHP",
     "protocol": "HTTPS",
     "urls": {
