@@ -31,7 +31,7 @@
                     <div class="modal-body">
                         <!-- Content Modal -->
                         <img src="view/_img/apidoclogo.png" class="navbar-left pull-right text-center">
-                        <h4 class="text-center">ApiDoc 1.1.0 (RC)</h4>
+                        <h4 class="text-center">ApiDoc 1.1.1 (RC)</h4>
                         <a href="https://github.com/brennoDuarte/ApiDoc/blob/master/LICENSE" target="_blank">License MIT</a>
                     </div>
                     <div class="modal-footer">
@@ -43,7 +43,7 @@
     </div>
 
     <?php                   
-        if ($warning) {
+        if (isset($warning)) {
             echo "<div class='alert alert-danger' role='alert'>";
             echo $warning;
             echo "</div>";
