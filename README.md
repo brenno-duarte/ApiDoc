@@ -34,4 +34,15 @@ The **urls** session is subdivided into:
 
 To add a new path, copy from "namePath" into the "config.json" file and paste it below the other paths.
 
+If your api does not have a certain request, change the field to null. Example: 
+
+```sh
+"post": {
+    "id": null,
+    "pathPost": null,
+    "descriptionPost": null,
+    "link": null
+},
+```
+
 Done, just open the **apidoc.php** file in any browse
