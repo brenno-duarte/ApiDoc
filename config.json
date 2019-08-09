@@ -14,25 +14,25 @@
                     "link": "http://localhost/linkGet"
                 },
                 "getId": {
-                    "id": 9,
+                    "id": 2,
                     "pathGetId": "/pathGetId",
                     "descriptionGetId": "descriptionGetId",
                     "link": "http://localhost/linkGetId"
                 },
                 "post": {
-                    "id": 2,
+                    "id": 3,
                     "pathPost": "/pathPost",
                     "descriptionPost": "descriptionPost",
                     "link": "http://localhost/linkPost"
                 },
                 "put": {
-                    "id": 3,
+                    "id": 4,
                     "pathPut": "/pathPut/{id}",
                     "descriptionPut": "descriptionPut",
                     "link": "http://localhost/linkPut"
                 },
                 "delete": {
-                    "id": 4,
+                    "id": 5,
                     "pathDelete": "/pathDelete/{id}",
                     "descriptionDelete": "descriptionDelete",
                     "link": "http://localhost/linkDelete"
@@ -40,66 +40,66 @@
             },
             "namePath2": {
                 "get": {
-                    "id": 5,
-                    "pathGet": "/pathGet",
-                    "descriptionGet": "descriptionGet",
-                    "link": "http://localhost/linkGet"
+                    "id": 6,
+                    "pathGet": "/pathGet2",
+                    "descriptionGet": "descriptionGet2",
+                    "link": "http://localhost/linkGet2"
                 },
                 "getId": {
-                    "id": 10,
-                    "pathGetId": "/pathGetId",
-                    "descriptionGetId": "descriptionGetId",
-                    "link": "http://localhost/linkGetId"
+                    "id": 7,
+                    "pathGetId": "/pathGetId2",
+                    "descriptionGetId": "descriptionGetId2",
+                    "link": "http://localhost/linkGetId2"
                 },
                 "post": {
-                    "id": 6,
-                    "pathPost": "/pathPost",
-                    "descriptionPost": "descriptionPost",
-                    "link": "http://localhost/linkPost"
+                    "id": 8,
+                    "pathPost": "/pathPost2",
+                    "descriptionPost": "descriptionPost2",
+                    "link": "http://localhost/linkPost2"
                 },
                 "put": {
-                    "id": 7,
-                    "pathPut": "/pathPut/{id}",
-                    "descriptionPut": "descriptionPut",
-                    "link": "http://localhost/linkPut"
+                    "id": 9,
+                    "pathPut": "/pathPut2/{id}",
+                    "descriptionPut": "descriptionPut2",
+                    "link": "http://localhost/linkPut2"
                 },
                 "delete": {
-                    "id": 8,
-                    "pathDelete": "/pathDelete/{id}",
-                    "descriptionDelete": "descriptionDelete",
-                    "link": "http://localhost/linkDelete"
+                    "id": 10,
+                    "pathDelete": "/pathDelete2/{id}",
+                    "descriptionDelete": "descriptionDelete2",
+                    "link": "http://localhost/linkDelete2"
                 }
             },
             "namePath3": {
                 "get": {
-                    "id": 5,
-                    "pathGet": "/pathGet",
-                    "descriptionGet": "descriptionGet",
-                    "link": "http://localhost/linkGet"
+                    "id": 11,
+                    "pathGet": "/pathGet3",
+                    "descriptionGet": "descriptionGet3",
+                    "link": "http://localhost/linkGet3"
                 },
                 "getId": {
-                    "id": 11,
-                    "pathGetId": "/pathGetId",
-                    "descriptionGetId": "descriptionGetId",
-                    "link": "http://localhost/linkGetId"
+                    "id": 12,
+                    "pathGetId": "/pathGetId3",
+                    "descriptionGetId": "descriptionGetId3",
+                    "link": "http://localhost/linkGetId3"
                 },
                 "post": {
-                    "id": 6,
-                    "pathPost": "/pathPost",
-                    "descriptionPost": "descriptionPost",
-                    "link": "http://localhost/linkPost"
+                    "id": 13,
+                    "pathPost": "/pathPost3",
+                    "descriptionPost": "descriptionPost3",
+                    "link": "http://localhost/linkPost3"
                 },
                 "put": {
-                    "id": 7,
-                    "pathPut": "/pathPut/{id}",
-                    "descriptionPut": "descriptionPut",
-                    "link": "http://localhost/adminPut"
+                    "id": 14,
+                    "pathPut": "/pathPut3/{id}",
+                    "descriptionPut": "descriptionPut3",
+                    "link": "http://localhost/adminPut3"
                 },
                 "delete": {
-                    "id": 8,
-                    "pathDelete": "/pathDelete/{id}",
-                    "descriptionDelete": "descriptionDelete",
-                    "link": "http://localhost/linkDelete"
+                    "id": 15,
+                    "pathDelete": "/pathDelete3/{id}",
+                    "descriptionDelete": "descriptionDelete3",
+                    "link": "http://localhost/linkDelete3"
                 }
             }
         }
