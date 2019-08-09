@@ -1,27 +1,28 @@
 <div class="container">
     <div class="row">
         <div class="col col-md-12">
-            <p><h1 class="display-4"><?php echo $info->appName; ?></h1></p>
+            <p><h1 class="display-4" id="info"><?php echo $info->appName; ?></h1></p>
         </div>
     </div>
 
     <div class="row">
         <div class="col col-md-6">
-            <p><span class="back">Description: </span><?php echo $info->description; ?></p>
-            <p><span class="back">API version: </span><?php echo $info->version; ?></p>
+            <p id="info"><span class="back" id="info">Description: </span><?php echo $info->description; ?></p>
+            <p id="info"><span class="back" id="info">API version: </span><?php echo $info->version; ?></p>
             <p><a href="https://github.com/brennoDuarte/ApiDoc/releases" target="_blank">Github</a></p>
             <p><a href="#" data-toggle="modal" data-target="#about">About</a></p>
+            <p><a href="#" id="darkMode">Enable Dark Mode</a></p>
         </div>
 
         <div class="col col-md-6">
-            <p><span class="back">Language: </span><?php echo $info->language; ?></p>
-            <p><span class="back">Protocol: </span><?php echo $info->protocol; ?></p>
+            <p id="info"><span class="back" id="info">Language: </span><?php echo $info->language; ?></p>
+            <p id="info"><span class="back" id="info">Protocol: </span><?php echo $info->protocol; ?></p>
         </div>
 
        <!-- Modal -->
         <div class="modal fade" id="about" tabindex="-1" role="dialog" aria-labelledby="labelM" aria-hidden="true">
             <div class="modal-dialog" role="document">
-                <div class="modal-content">
+                <div class="modal-content" id="dark">
                     <div class="modal-header">
                         <h5 class="modal-title" id="labelM">About</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
@@ -31,8 +32,9 @@
                     <div class="modal-body">
                         <!-- Content Modal -->
                         <img src="view/_img/apidoclogo.png" class="navbar-left pull-right text-center">
-                        <h4 class="text-center">ApiDoc 1.1.1 (RC)</h4>
-                        <a href="https://github.com/brennoDuarte/ApiDoc/blob/master/LICENSE" target="_blank">License MIT</a>
+                        <h4 class="text-center" id="light">ApiDoc 1.2.0 (Beta)</h4>
+                        <p><a class="link" href="https://github.com/brennoDuarte/ApiDoc/blob/master/LICENSE" target="_blank">License MIT</a></p>
+                        <p><a class="link" href="https://github.com/brennoDuarte?tab=repositories" target="_blank">More from developer</a></p>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -62,11 +64,11 @@
     </div>
 
     <!-- Modal get -->
-    <div class="modal fade" id="modal<?= $r->get->id; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="modal<?= $r->get->id; ?>" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
-            <div class="modal-content">
+            <div class="modal-content" id="dark">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel"><?= $r->get->pathGet; ?></h5>
+                    <h5 class="modal-title" id="modalLabel"><?= $r->get->pathGet; ?></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                     <span aria-hidden="true">&times;</span>
                     </button>
@@ -87,11 +89,11 @@
     </div>
 
     <!-- Modal getId -->
-    <div class="modal fade" id="modal<?= $r->getId->id; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="modal<?= $r->getId->id; ?>" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
-            <div class="modal-content">
+            <div class="modal-content" id="dark">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel"><?= $r->getId->pathGetId; ?></h5>
+                    <h5 class="modal-title" id="modalLabel"><?= $r->get->pathGet; ?></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                     <span aria-hidden="true">&times;</span>
                     </button>
@@ -112,11 +114,11 @@
     </div>
 
     <!-- Modal post -->
-    <div class="modal fade" id="modal<?= $r->post->id; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="modal<?= $r->post->id; ?>" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
-            <div class="modal-content">
+            <div class="modal-content" id="dark">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel"><?= $r->post->pathPost; ?></h5>
+                    <h5 class="modal-title" id="modalLabel"><?= $r->post->pathPost; ?></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                     <span aria-hidden="true">&times;</span>
                     </button>
@@ -137,11 +139,11 @@
     </div>
 
     <!-- Modal put -->
-    <div class="modal fade" id="modal<?= $r->put->id; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="modal<?= $r->put->id; ?>" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
-            <div class="modal-content">
+            <div class="modal-content" id="dark">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel"><?= $r->put->pathPut; ?></h5>
+                    <h5 class="modal-title" id="modalLabel"><?= $r->put->pathPut; ?></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                     <span aria-hidden="true">&times;</span>
                     </button>
@@ -162,11 +164,11 @@
     </div>
 
     <!-- Modal delete -->
-    <div class="modal fade" id="modal<?= $r->delete->id; ?>" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="modal<?= $r->delete->id; ?>" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
-            <div class="modal-content">
+            <div class="modal-content" id="dark">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel"><?= $r->delete->pathDelete; ?></h5>
+                    <h5 class="modal-title" id="modalLabel"><?= $r->delete->pathDelete; ?></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
                     <span aria-hidden="true">&times;</span>
                     </button>
@@ -189,7 +191,9 @@
 </div>
 
 <script src="view/_js/jquery-3.4.1.min.js"></script>
+<script src="view/_js/jquery.cookie.js"></script>
 <script src="view/_js/bootstrap.js"></script>
+<script src="view/_js/darkMode.js"></script>
 <noscript>
     <meta http-equiv="refresh" content="0; url=../error/">
 </noscript>

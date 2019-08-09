@@ -6,13 +6,13 @@ ApiDoc is a template made in HTML, PHP and Jquery to assist with PHP REST API do
 
 ### Installation
 
-Make sure JavaScript is enabled in your browser.
-
-ApiDoc does not need to be installed on your machine, just clone the file and unzip it to the server folder.
+Copy the link below to your command line to download the latest version. ApiDoc does not need to be installed on your machine, just clone the file and unzip it to the server folder.
 
 ```sh
-$ git clone https://github.com/brennoDuarte/apidoc.git
+$ git clone -b 1.1.3 --single-branch https://github.com/brennoDuarte/ApiDoc.git ApiDoc-v1.1.3-stable
 ```
+
+Make sure JavaScript is enabled in your browser.
 
 ### Configure
 

@@ -7,6 +7,10 @@ ul li {
     margin-bottom: 10px;
 }
 
+.darkMode {
+    background-color: #4F4F4F !important;
+}
+
 .float {
     text-align: left;
 }
@@ -40,4 +44,5 @@ ul li {
 .back {
     color: #191970;
     font-size: 18px;
+    font-weight: bold;
 }
