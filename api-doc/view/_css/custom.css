@@ -11,6 +11,14 @@ ul li {
     background-color: #4F4F4F !important;
 }
 
+.darkMode2 {
+    color: #FFFF00 !important;
+}
+
+.darkMode3 {
+    color: #FFF !important;
+}
+
 .float {
     text-align: left;
 }

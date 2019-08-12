@@ -9,8 +9,8 @@
         <div class="col col-md-6">
             <p id="info"><span class="back" id="info">Description: </span><?php echo $info->description; ?></p>
             <p id="info"><span class="back" id="info">API version: </span><?php echo $info->version; ?></p>
-            <p><a href="https://github.com/brennoDuarte/ApiDoc/releases" target="_blank">Github</a></p>
-            <p><a href="#" data-toggle="modal" data-target="#about">About</a></p>
+            <p><a class="dark2" href="https://github.com/brennoDuarte/ApiDoc/releases" target="_blank">Github</a></p>
+            <p><a class="dark2" href="#" data-toggle="modal" data-target="#about">About</a></p>
             <p><a href="#" id="darkMode">Enable Dark Mode</a></p>
         </div>
 
@@ -31,8 +31,8 @@
                     </div>
                     <div class="modal-body">
                         <!-- Content Modal -->
-                        <img src="view/_img/apidoclogo.png" class="navbar-left pull-right text-center">
-                        <h4 class="text-center" id="light">ApiDoc 1.2.0 (Beta)</h4>
+                        <img src="view/_img/apidoclogo.png" id="logoApi" class="navbar-left pull-right text-center">
+                        <h4 class="text-center" id="light">ApiDoc 1.2.0</h4>
                         <p><a class="link" href="https://github.com/brennoDuarte/ApiDoc/blob/master/LICENSE" target="_blank">License MIT</a></p>
                         <p><a class="link" href="https://github.com/brennoDuarte?tab=repositories" target="_blank">More from developer</a></p>
                     </div>
@@ -46,8 +46,14 @@
 
     <?php                   
         if (isset($warning)) {
-            echo "<div class='alert alert-danger' role='alert'>";
+            echo "<div class='alert alert-warning' role='alert'>";
             echo $warning;
+            echo "</div>";
+        }
+
+        if (isset($warningId)) {
+            echo "<div class='alert alert-danger' role='alert'>";
+            echo $warningId;
             echo "</div>";
         }
     ?>
@@ -78,7 +84,7 @@
                         <?= $r->get->descriptionGet; ?>
                     </div>
                     <div>
-                        <a href="<?= $r->get->link; ?>" target="_blank"><?= $r->get->link; ?></a>
+                        <a class="link" href="<?= $r->get->link; ?>" target="_blank"><?= $r->get->link; ?></a>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -103,7 +109,7 @@
                         <?= $r->getId->descriptionGetId; ?>
                     </div>
                     <div>
-                        <a href="<?= $r->getId->link; ?>" target="_blank"><?= $r->getId->link; ?></a>
+                        <a class="link" href="<?= $r->getId->link; ?>" target="_blank"><?= $r->getId->link; ?></a>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -128,7 +134,7 @@
                         <?= $r->post->descriptionPost; ?>
                     </div>
                     <div>
-                        <a href="<?= $r->post->link; ?>" target="_blank"><?= $r->post->link; ?></a>
+                        <a class="link" href="<?= $r->post->link; ?>" target="_blank"><?= $r->post->link; ?></a>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -153,7 +159,7 @@
                         <?= $r->put->descriptionPut; ?>
                     </div>
                     <div>
-                        <a href="<?= $r->put->link; ?>" target="_blank"><?= $r->put->link; ?></a>
+                        <a class="link" href="<?= $r->put->link; ?>" target="_blank"><?= $r->put->link; ?></a>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -178,7 +184,7 @@
                         <?= $r->delete->descriptionDelete; ?>
                     </div>
                     <div>
-                        <a href="<?= $r->delete->link; ?>" target="_blank"><?= $r->delete->link; ?></a>
+                        <a class="link" href="<?= $r->delete->link; ?>" target="_blank"><?= $r->delete->link; ?></a>
                     </div>
                 </div>
                 <div class="modal-footer">

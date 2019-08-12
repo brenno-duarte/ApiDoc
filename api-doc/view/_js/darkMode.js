@@ -1,5 +1,6 @@
 $("#darkMode").click(function(){
-    darkMode();
+    var dark = darkMode();
+    $.cookie('darkModeOn', dark);
 });
 
 function darkMode(){
@@ -8,20 +9,24 @@ function darkMode(){
     });
 
     $("#info").css({
-        color: "#fff"
+        color: "#F8F8FF"
     });
 
     $("span#info").css({
-        color: "#00BFFF",
+        color: "#1E90FF",
         fontWeight: "bold"
     });
 
     $("p#info").css({
-        color: "#fff"
+        color: "#F8F8FF"
     });
 
     $(".card-body").css({
-       backgroundColor: "#363636" 
+        backgroundColor: "#363636" 
+    });
+
+    $(".modal-content").css({
+        backgroundColor: "#696969" 
     });
 
     $(".modal fade").css({
@@ -33,17 +38,27 @@ function darkMode(){
     });
 
     $("#labelM").css({
-        color: "#fff"
+        color: "#F8F8FF"
+    });
+
+    $(".modal-title").css({
+        color: "#F8F8FF"
+    });
+
+    $(".modal-body").css({
+        color: "#F8F8FF"
     });
 
     $("#light").css({
-        color: "#fff"
+        color: "#F8F8FF"
     });
 
     $(".link").css({
-        color: "#00BFFF"
+        color: "#FFFF00"
     });
 
     $("#dark").addClass('darkMode');
-
+    $(".dark2").addClass('darkMode3');
+    $("#darkMode").html('Reload page for disable Dark Mode').addClass('darkMode2');
+    $("#logoApi").attr('src', 'view/_img/apidoclogowhite.png');
 }

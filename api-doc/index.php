@@ -16,6 +16,12 @@ foreach ($router->path as $value) {
     $value->put->link == NULL || $value->delete->link == NULL) {
         $warning = "There are some null fields in your json. Some routes will be empty";
     }
+
+    if ($value->get->id == NULL || $value->post->id == NULL || 
+    $value->put->id == NULL || $value->delete->id == NULL) {
+        $warningId = "The 'id' field is empty / null in 'config.json'. The modal will not be displayed";
+    }
+    
 }
 
 include "header.php";
