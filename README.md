@@ -9,7 +9,7 @@ ApiDoc is a template made in HTML, PHP and Jquery to assist with PHP REST API do
 Copy the link below to your command line to download the latest version. ApiDoc does not need to be installed on your machine, just clone the file and unzip it to the server folder.
 
 ```sh
-$ git clone -b 1.1.3 --single-branch https://github.com/brennoDuarte/ApiDoc.git ApiDoc-v1.1.3-stable
+$ git clone -b 1.2.0 --single-branch https://github.com/brennoDuarte/ApiDoc.git ApiDoc-v1.2.0-stable
 ```
 
 Make sure JavaScript is enabled in your browser.
@@ -23,9 +23,9 @@ You can edit the file "config.json" as follows:
 - **"description"**: a brief description of your api,
 - **"language"**: the language in which your API was made,
 - **"protocol"**: your api's protocol, HTTP or HTTPS,
-- **"urls"**: API routes.
 
-The **urls** session is subdivided into:
+To edit default routes, change the "router.json" file. The **urls** session is subdivided into:
+
 - **"namePath"**: name main route from your endpoint,
 - **"id"**: modal id that will be displayed by clicking the route button. Remember to edit a different id for each endpoint, otherwise the id will not be displayed,
 - **"pathGet/GetId/Post/Put/Delete"**: endpoints of your API,
@@ -33,6 +33,14 @@ The **urls** session is subdivided into:
 - **"link"**: link from your endpoint. Clicking it will open in a new tab.
 
 To add a new path, copy from "namePath" into the "config.json" file and paste it below the other paths.
+
+If you have multiple routes (get, post, put, delete), use a custom route. you can edit the customrouter.json file for this:
+
+- **"customRouter"**: name main route from your endpoint,
+- **"type"**: GET, POST, PUT, DELETE or other,
+- **"path"**: endpoint of your API,
+- **"description"**: a brief description of your endpoint,
+- **"link"**: link from your endpoint. Clicking it will open in a new tab.
 
 If your api does not have a certain request, change the field to null. Example: 
 

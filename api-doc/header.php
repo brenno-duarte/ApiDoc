@@ -13,8 +13,10 @@
         <link rel="icon" href="view/_img/favicon.ico" />
     </head>
     <body>
-        <nav class="bg-primary">
-            <ul class="nav container">
-                <img src="view/_img/apidoclogowhite.png" class="navbar-left pull-right logo">
+        <nav class="bg-primary nav">
+            <ul class="container">
+                <img src="view/_img/mini.png" class="navbar-left pull-right">
+                <a class="text-white flex-row itens" href="#" id="darkMode">DarkMode</a>
+                <a class="text-white flex-row itens" href="#" data-toggle="modal" data-target="#about">About</a>
             </ul>
         </nav>

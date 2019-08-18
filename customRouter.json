@@ -1,0 +1,18 @@
+{
+    "urls": {
+        "path": {
+            "customRouter1": {
+                "type": "POST",
+                "path": "/path",
+                "description": "description",
+                "link": "http://localhost/link"
+            },
+            "customRouter2": {
+                "type": "PATCH",
+                "path": "/path2",
+                "description": "description2",
+                "link": "http://localhost/link2"
+            }
+        }
+    }
+}

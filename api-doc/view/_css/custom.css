@@ -1,3 +1,7 @@
+body {
+    background-color: #F8F8FF;
+}
+
 nav {
     height: 50px;
 }
@@ -5,6 +9,14 @@ nav {
 ul li {
     list-style-type: none;
     margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+}
+
+.itens {
+    padding: 0px 0px 0px 20px;
 }
 
 .darkMode {
@@ -50,7 +62,6 @@ ul li {
 }
 
 .back {
-    color: #191970;
-    font-size: 18px;
+    color: #363636;
     font-weight: bold;
 }

@@ -9,12 +9,6 @@
         <div class="col col-md-6">
             <p id="info"><span class="back" id="info">Description: </span><?php echo $info->description; ?></p>
             <p id="info"><span class="back" id="info">API version: </span><?php echo $info->version; ?></p>
-            <p><a class="dark2" href="https://github.com/brennoDuarte/ApiDoc/releases" target="_blank">Github</a></p>
-            <p><a class="dark2" href="#" data-toggle="modal" data-target="#about">About</a></p>
-            <p><a href="#" id="darkMode">Enable Dark Mode</a></p>
-        </div>
-
-        <div class="col col-md-6">
             <p id="info"><span class="back" id="info">Language: </span><?php echo $info->language; ?></p>
             <p id="info"><span class="back" id="info">Protocol: </span><?php echo $info->protocol; ?></p>
         </div>
@@ -32,9 +26,40 @@
                     <div class="modal-body">
                         <!-- Content Modal -->
                         <img src="view/_img/apidoclogo.png" id="logoApi" class="navbar-left pull-right text-center">
-                        <h4 class="text-center" id="light">ApiDoc 1.2.0</h4>
+                        <h4 class="text-center" id="light">ApiDoc 1.3.0 (Beta)</h4>
+                        <p><a class="link" href="https://github.com/brennoDuarte/ApiDoc/releases" target="_blank">Github</a></p>
                         <p><a class="link" href="https://github.com/brennoDuarte/ApiDoc/blob/master/LICENSE" target="_blank">License MIT</a></p>
-                        <p><a class="link" href="https://github.com/brennoDuarte?tab=repositories" target="_blank">More from developer</a></p>
+                        <p><a class="link" href="http://brennoduarte.rf.gd" target="_blank">More from developer</a></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row container space">
+        <button class="btn btn-outline-info" data-toggle="modal" data-target="#modalCustom">Custom Paths</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modalCustom" tabindex="-1" role="dialog" aria-labelledby="CustomPaths" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="CustomPaths">Custom Paths</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <?php foreach($customRouter->path as $i=>$r): ?>
+                            <h4><?= $i; ?></h4>
+                            <p>Type: <span class="font-weight-bold link"><?= $r->type; ?></span> </p>
+                            <p>Path: <span class="font-weight-bold link"><?= $r->path; ?></span> </p>
+                            <p>Description: <span class="font-weight-bold link"><?= $r->description; ?></span> </p>
+                            <p>Link: <a target="_blank" class="link" href="<?= $r->link; ?>"><?= $r->link; ?></a></p>
+                        <?php endforeach; ?>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>

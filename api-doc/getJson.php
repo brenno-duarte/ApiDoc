@@ -10,7 +10,15 @@ class getJson {
     }
 
     public function getRouter(){
-        $json = file_get_contents('../config.json');
+        $json = file_get_contents('../router.json');
+        $array = json_decode($json);
+        $res = $array->urls;
+
+        return $res;
+    }
+
+    public function getCustomRouter(){
+        $json = file_get_contents('../customRouter.json');
         $array = json_decode($json);
         $res = $array->urls;
 

@@ -5,6 +5,7 @@ require 'getJson.php';
 $api = new getJson();
 $info = $api->getInfo();
 $router = $api->getRouter();
+$customRouter = $api->getCustomRouter();
 
 foreach ($router->path as $value) {
     if ($value->get->pathGet == NULL || $value->getId->pathGetId == NULL || $value->post->pathPost == NULL 
