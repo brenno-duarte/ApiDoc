@@ -16,6 +16,8 @@ Make sure JavaScript is enabled in your browser.
 
 ### Configure
 
+The json files are in the "json" folder.
+
 You can edit the file "config.json" as follows:
 
 - **"appName"**: your project name,
@@ -26,13 +28,13 @@ You can edit the file "config.json" as follows:
 
 To edit default routes, change the "router.json" file. The **urls** session is subdivided into:
 
-- **"namePath"**: name main route from your endpoint,
+- **"pathName"**: name main route from your endpoint,
 - **"id"**: modal id that will be displayed by clicking the route button. Remember to edit a different id for each endpoint, otherwise the id will not be displayed,
 - **"pathGet/GetId/Post/Put/Delete"**: endpoints of your API,
 - **"descriptionGet/Post/Put/Delete"**: a brief description of your endpoint,
 - **"link"**: link from your endpoint. Clicking it will open in a new tab.
 
-To add a new path, copy from "namePath" into the "config.json" file and paste it below the other paths.
+To add a new path, copy from "pathName" into the "config.json" file and paste it below the other paths.
 
 If you have multiple routes (get, post, put, delete), use a custom route. you can edit the customrouter.json file for this:
 

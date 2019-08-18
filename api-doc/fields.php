@@ -26,7 +26,7 @@
                     <div class="modal-body">
                         <!-- Content Modal -->
                         <img src="view/_img/apidoclogo.png" id="logoApi" class="navbar-left pull-right text-center">
-                        <h4 class="text-center" id="light">ApiDoc 1.3.0 (Beta)</h4>
+                        <h4 class="text-center" id="light">ApiDoc 2.0.0 (Beta)</h4>
                         <p><a class="link" href="https://github.com/brennoDuarte/ApiDoc/releases" target="_blank">Github</a></p>
                         <p><a class="link" href="https://github.com/brennoDuarte/ApiDoc/blob/master/LICENSE" target="_blank">License MIT</a></p>
                         <p><a class="link" href="http://brennoduarte.rf.gd" target="_blank">More from developer</a></p>
@@ -54,11 +54,18 @@
                     </div>
                     <div class="modal-body">
                         <?php foreach($customRouter->path as $i=>$r): ?>
-                            <h4><?= $i; ?></h4>
-                            <p>Type: <span class="font-weight-bold link"><?= $r->type; ?></span> </p>
-                            <p>Path: <span class="font-weight-bold link"><?= $r->path; ?></span> </p>
-                            <p>Description: <span class="font-weight-bold link"><?= $r->description; ?></span> </p>
-                            <p>Link: <a target="_blank" class="link" href="<?= $r->link; ?>"><?= $r->link; ?></a></p>
+                            <h4 class="font-weight-bold"><?= $i; ?></h4>
+                            <p class="font-weight-bold">Type</p>
+                            <p><span class="badge badge-info fontspan"><?= $r->type; ?></span></p>
+
+                            <p class="font-weight-bold">Path</p>
+                            <p><span><?= $r->path; ?></span></p>
+
+                            <p class="font-weight-bold">Description</p>
+                            <p><span><?= $r->description; ?></span></p>
+
+                            <p class="font-weight-bold">Link</p>
+                            <a style="margin-bottom: 20px;" target="_blank" class="link" href="<?= $r->link; ?>"><?= $r->link; ?></a>
                         <?php endforeach; ?>
                     </div>
                     <div class="modal-footer">
@@ -106,10 +113,15 @@
                 </div>
                 <div class="modal-body">
                     <div class="space">
-                        <?= $r->get->descriptionGet; ?>
+                        <p><strong>Type</strong></p>
+                        <p class="badge badge-primary fontspan">GET</p>
+
+                        <p><strong>Description</strong></p>
+                        <p><?= $r->get->descriptionGet; ?></p>
                     </div>
                     <div>
-                        <a class="link" href="<?= $r->get->link; ?>" target="_blank"><?= $r->get->link; ?></a>
+                        <p><strong>Link</strong></p>
+                        <p><a class="link" href="<?= $r->get->link; ?>" target="_blank"><?= $r->get->link; ?></a></p>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -131,10 +143,15 @@
                 </div>
                 <div class="modal-body">
                     <div class="space">
-                        <?= $r->getId->descriptionGetId; ?>
+                        <p><strong>Type</strong></p>
+                        <p class="badge badge-primary fontspan">GET</p>
+
+                        <p><strong>Description</strong></p>
+                        <p><?= $r->getId->descriptionGetId; ?></p>
                     </div>
                     <div>
-                        <a class="link" href="<?= $r->getId->link; ?>" target="_blank"><?= $r->getId->link; ?></a>
+                        <p><strong>Link</strong></p>
+                        <p><a class="link" href="<?= $r->getId->link; ?>" target="_blank"><?= $r->getId->link; ?></a></p>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -156,10 +173,15 @@
                 </div>
                 <div class="modal-body">
                     <div class="space">
-                        <?= $r->post->descriptionPost; ?>
+                        <p><strong>Type</strong></p>
+                        <p class="badge badge-success fontspan">POST</p>
+
+                        <p><strong>Description</strong></p>
+                        <p><?= $r->post->descriptionPost; ?></p>
                     </div>
                     <div>
-                        <a class="link" href="<?= $r->post->link; ?>" target="_blank"><?= $r->post->link; ?></a>
+                        <p><strong>Link</strong></p>
+                        <p><a class="link" href="<?= $r->post->link; ?>" target="_blank"><?= $r->post->link; ?></a></p>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -181,10 +203,15 @@
                 </div>
                 <div class="modal-body">
                     <div class="space">
-                        <?= $r->put->descriptionPut; ?>
+                        <p><strong>Type</strong></p>
+                        <p class="badge badge-warning fontspan">PUT</p>
+
+                        <p><strong>Description</strong></p>
+                        <p><?= $r->put->descriptionPut; ?></p>
                     </div>
                     <div>
-                        <a class="link" href="<?= $r->put->link; ?>" target="_blank"><?= $r->put->link; ?></a>
+                        <p><strong>Link</strong></p>
+                        <p><a class="link" href="<?= $r->put->link; ?>" target="_blank"><?= $r->put->link; ?></a></p>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -206,10 +233,15 @@
                 </div>
                 <div class="modal-body">
                     <div class="space">
-                        <?= $r->delete->descriptionDelete; ?>
+                        <p><strong>Type</strong></p>
+                        <p class="badge badge-danger fontspan">DELETE</p>
+
+                        <p><strong>Description</strong></p>
+                        <p><?= $r->delete->descriptionDelete; ?></p>
                     </div>
                     <div>
-                        <a class="link" href="<?= $r->delete->link; ?>" target="_blank"><?= $r->delete->link; ?></a>
+                        <p><strong>Link</strong></p>
+                        <p><a class="link" href="<?= $r->delete->link; ?>" target="_blank"><?= $r->delete->link; ?></a></p>
                     </div>
                 </div>
                 <div class="modal-footer">

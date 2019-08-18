@@ -1,6 +1,5 @@
 $("#darkMode").click(function(){
-    var dark = darkMode();
-    $.cookie('darkModeOn', dark);
+    darkMode();
 });
 
 function darkMode(){
