@@ -24,8 +24,8 @@ function darkMode(){
         backgroundColor: "#363636" 
     });
 
-    $(".modal-content").css({
-        backgroundColor: "#696969" 
+    $(".modal-content, .modal-header").css({
+        backgroundColor: "#363636" 
     });
 
     $(".modal fade").css({

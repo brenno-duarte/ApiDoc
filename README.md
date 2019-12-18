@@ -9,7 +9,7 @@ ApiDoc is a template made in HTML, PHP and Jquery to assist with PHP REST API do
 Copy the link below to your command line to download the latest version. ApiDoc does not need to be installed on your machine, just clone the file and unzip it to the server folder.
 
 ```sh
-$ git clone -b 1.2.0 --single-branch https://github.com/brennoDuarte/ApiDoc.git ApiDoc-v1.2.0-stable
+$ git clone -b 2.0.0 --single-branch https://github.com/brennoDuarte/ApiDoc.git ApiDoc-v2.0.0-stable
 ```
 
 Make sure JavaScript is enabled in your browser.

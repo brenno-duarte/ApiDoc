@@ -11,6 +11,9 @@
         <link rel="stylesheet" href="view/_css/bootstrap.css" />
         <link rel="stylesheet" href="view/_css/custom.css" />
         <link rel="icon" href="view/_img/favicon.ico" />
+        <noscript>
+            <meta http-equiv="refresh" content="0; url=../error/">
+        </noscript>
     </head>
     <body>
         <nav class="bg-primary nav">
