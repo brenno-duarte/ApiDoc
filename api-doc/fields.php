@@ -26,7 +26,7 @@
                     <div class="modal-body">
                         <!-- Content Modal -->
                         <img src="view/_img/apidoclogo.png" id="logoApi" class="navbar-left pull-right text-center">
-                        <h4 class="text-center" id="light">ApiDoc 2.0.0 (Beta)</h4>
+                        <h4 class="text-center" id="light">ApiDoc 2.0.0</h4>
                         <p><a class="link" href="https://github.com/brennoDuarte/ApiDoc/releases" target="_blank">Github</a></p>
                         <p><a class="link" href="https://github.com/brennoDuarte/ApiDoc/blob/master/LICENSE" target="_blank">License MIT</a></p>
                         <p><a class="link" href="http://brennoduarte.rf.gd" target="_blank">More from developer</a></p>

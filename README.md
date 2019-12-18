@@ -13,6 +13,7 @@ $ git clone -b 2.0.0 --single-branch https://github.com/brennoDuarte/ApiDoc.git 
 ```
 
 Make sure JavaScript is enabled in your browser.
+You can turn on dark mode, but it will turn off as soon as you reload the page.
 
 ### Configure
 
@@ -55,4 +56,4 @@ If your api does not have a certain request, change the field to null. Example:
 },
 ```
 
-Done, just open the **apidoc.php** file in any browse
+Done, just open the **apidoc.php** file in any browse.
